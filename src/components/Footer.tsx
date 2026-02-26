@@ -8,9 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">
-              Private<span className="text-primary">Explorers</span>
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/images/logo.png" alt="Private Explorers" className="w-10 h-10 invert" />
+              <h3 className="font-display text-2xl font-bold">
+                Private<span className="text-primary">Explorers</span>
+              </h3>
+            </div>
             <p className="text-sm opacity-70 leading-relaxed">
               Your gateway to unforgettable African safari experiences. We craft personalized journeys through East Africa's most breathtaking landscapes.
             </p>
