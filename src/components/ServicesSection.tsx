@@ -30,7 +30,7 @@ const ServicesSection = () => {
     <section className="py-20 md:py-28 bg-background">
       <div className="container">
         <div className="text-center mb-16">
-          <p className="text-primary text-xs tracking-[0.3em] uppercase mb-3 font-semibold">What We Offer</p>
+          <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3 font-medium">What We Offer</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground">
             Meaningful Safaris, Lasting Impact
           </h2>
@@ -44,10 +44,10 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group bg-card p-8 border border-border hover:border-foreground/20 transition-all duration-300"
+              className="group bg-card rounded-lg p-8 hover:shadow-warm transition-all duration-300 border border-transparent hover:border-primary/20"
             >
-              <div className="w-14 h-14 bg-foreground flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <service.icon className="w-6 h-6 text-background" />
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-3">{service.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
@@ -58,7 +58,7 @@ const ServicesSection = () => {
         <div className="text-center mt-12">
           <Link
             to="/tours"
-            className="inline-flex items-center text-foreground font-semibold text-xs tracking-[0.2em] uppercase hover:text-primary transition-colors"
+            className="inline-flex items-center text-primary font-medium text-sm tracking-wide hover:underline underline-offset-4"
           >
             Explore All Tours →
           </Link>

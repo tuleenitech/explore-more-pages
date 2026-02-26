@@ -31,7 +31,7 @@ const Navbar = () => {
               info@privateexplorers.com
             </a>
           </div>
-          <span className="text-muted-foreground text-xs tracking-[0.25em] uppercase">
+          <span className="text-muted-foreground text-xs tracking-wider uppercase">
             East Africa's Premier Safari Company
           </span>
         </div>
@@ -40,8 +40,7 @@ const Navbar = () => {
       {/* Main nav */}
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-3">
-            <img src="/images/logo.png" alt="Private Explorers" className="w-10 h-10" />
+          <Link to="/" className="flex items-center gap-2">
             <span className="font-display text-2xl font-bold tracking-tight text-foreground">
               Private<span className="text-primary">Explorers</span>
             </span>
@@ -53,7 +52,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-xs font-medium tracking-[0.15em] uppercase transition-colors hover:text-primary ${
+                className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-primary ${
                   location.pathname === link.to ? "text-primary" : "text-foreground"
                 }`}
               >
