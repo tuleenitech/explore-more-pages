@@ -19,7 +19,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-4"
+          className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-4 font-medium"
         >
           East Africa Safari Adventure & Island Bliss
         </motion.p>
@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight max-w-4xl mx-auto"
         >
           Where Every Sunrise Brings a{" "}
-          <span className="text-primary italic">New Adventure</span>
+          <span className="text-gradient-gold italic">New Adventure</span>
         </motion.h1>
 
         <motion.p
